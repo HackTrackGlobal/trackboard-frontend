@@ -1,5 +1,5 @@
 # Trackboard Frontend
-The community contributing platform for eBay.
+The Hackathon Dashboard System.
 
 ## Run
     npm install

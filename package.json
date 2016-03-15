@@ -1,6 +1,6 @@
 {
   "name": "trackboard-frontend",
-  "description": "The hackathon dashboard",
+  "description": "The Hackathon Dashboard System",
   "version": "1.0.0",
 
   "main": "server.js",
