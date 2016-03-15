@@ -1,0 +1,26 @@
+{
+  "name": "trackboard-frontend",
+  "description": "The hackathon dashboard",
+
+  "main": "server.js",
+  "private": true,
+
+  "license": "ISC",
+  "authors": [
+    "Yarden Sod-Moriah"
+  ],
+
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "material-design-lite": "^1.1.2"
+  }
+}

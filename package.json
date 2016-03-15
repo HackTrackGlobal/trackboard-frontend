@@ -1,0 +1,15 @@
+{
+  "name": "trackboard-frontend",
+  "description": "The hackathon dashboard",
+  "version": "1.0.0",
+
+  "main": "server.js",
+  "private": true,
+
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+
+  "author": "Yarden Sod-Moriah",
+  "license": "ISC"
+}
