@@ -6,9 +6,9 @@ The Hackathon Dashboard System.
     node server
 
 ## Moving to Production
-1) Open file `public/js/app.js`
-2) Change variable `STAGING_MODE` from `dev` to `prod`
-3) Build Project (Next Section)
+1. Open file `public/js/app.js`
+2. Change variable `STAGING_MODE` from `dev` to `prod`
+3. Build Project (Next Section)
 
 ## Configuring default port (for the mock server)
 edit config.js:
