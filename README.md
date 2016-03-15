@@ -27,7 +27,11 @@ edit config.js:
 Crossed items are deprecated.
 
 ### Important
-- [ ] Setting up the framework
+- [x] Setting up the framework
+- [ ] Setting up all the routes
+- [ ] Plan the backend
+- [ ] Design all the pages
+- [ ] Start build'em
 
 ### Still important, but only if we have time
 - [ ]

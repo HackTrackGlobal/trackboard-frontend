@@ -4,28 +4,12 @@
  * Very important! change from 'dev' to 'prod' when
  * using in production!!!
  */
-var STAGING_MODE = 'prod';
+var STAGING_MODE = 'dev';
 
 /**
  * API ROUTES
  */
-var API_ROUTE_LOGIN = 'https://ecomm-server.herokuapp.com/login';
-var API_ROUTE_USERS = 'https://ecomm-server.herokuapp.com/users';
-var API_ROUTE_USER = 'https://ecomm-server.herokuapp.com/user';
-var API_ROUTE_QUESTS = 'https://ecomm-server.herokuapp.com/quests';
-
-/**
- * API QUESTS ROUTES
- */
-var API_ROUTE_QUEST_MATCH_CATEGORY_START = 'https://ecomm-server.herokuapp.com/game/category/start';
-var API_ROUTE_QUEST_MATCH_CATEGORY_END = 'https://ecomm-server.herokuapp.com/game/category/end';
-var API_ROUTE_QUEST_MATCH_IMAGE_START = 'https://ecomm-server.herokuapp.com/game/image/start';
-var API_ROUTE_QUEST_MATCH_IMAGE_END = 'https://ecomm-server.herokuapp.com/game/image/end';
-
-/**
- * BADGES URL
- */
-var BADGES_URL = 'https://api.myjson.com/bins/2kgex';
+var API_ROUTE_USER = '';
 
 /**
  * LOCAL STORAGE KEYS
@@ -57,9 +41,6 @@ $(document).initRouter({
         // all this stuff here. again.
         componentHandler.upgradeAllRegistered();
 
-        // Close drawer
-        $('#ecomm-drawer, .mdl-layout__obfuscator').removeClass('is-visible');
-
         // Remove the 'is-invalid' class to inputs,
         // because of a bug with MDL
         $('.mdl-textfield').removeClass('is-invalid');
@@ -68,7 +49,8 @@ $(document).initRouter({
         if (typeof(Storage) === 'undefined') {
 
             // Show message
-            showErrorAlert('You browser is not supported');
+            // TODO: Change
+            alert('You browser is not supported');
         }
         else {
 
@@ -85,28 +67,6 @@ $(document).initRouter({
 
                 // Show everything!
                 $('.onlyForLogged').show();
-
-                // Setting user bar
-                $('#ecomm-user-menu').html(localStorage.getItem(STORAGE_USER_EMAIL));
             }
         }
     }});
-
-/**
- * SCORE DIALOG SETUP
- */
-$('#dialog-score').dialog({
-    autoOpen: false,
-    modal: true,
-    resizable: false,
-    draggable: false,
-    minWidth: 570,
-    show: {
-        effect: 'fadeIn',
-        duration: 300
-    },
-    hide: {
-        effect: 'fadeOut',
-        duration: 300
-    }
-});
