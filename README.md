@@ -29,7 +29,6 @@ Crossed items are deprecated.
 ### Important
 - [x] Setting up the framework
 - [ ] Setting up all the routes
-- [ ] Plan the backend
 - [ ] Design all the pages
 - [ ] Start build'em
 
@@ -37,7 +36,7 @@ Crossed items are deprecated.
 - [ ]
 
 ### Later
-- [ ]
+- [ ] Create a gulpfile for building
 
 ### Trash
 - [ ]

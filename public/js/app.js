@@ -36,6 +36,17 @@ $(document).initRouter({
          */
         if (STAGING_MODE === 'dev') console.debug('Route changed! ' + route);
 
+        // Need to add an 'active' class to the selected menu item
+        $('.tb-navigation .mdl-navigation__link').each(function() {
+            var e = $(this);
+            e.removeClass('active');
+            if (e.attr('href') == window.location.hash) e.addClass('active');
+        });
+
+        // Setting the title
+        var title = window.location.hash.slice(2, window.location.hash.length).split('_').join(" ");
+        $('#page-title').html(title);
+
         // There is a problem with the
         // MDL JS Library, so we initiate
         // all this stuff here. again.
@@ -61,12 +72,12 @@ $(document).initRouter({
                 if (route !== 'register') window.location.hash = '#!login';
 
                 // And hide the stuff we don't want him to see
-                $('.onlyForLogged').hide();
+                $('.only-for-logged').hide();
             }
             else {
 
                 // Show everything!
-                $('.onlyForLogged').show();
+                $('.only-for-logged').show();
             }
         }
     }});
