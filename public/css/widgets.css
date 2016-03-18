@@ -1,0 +1,60 @@
+/* ======================== *
+ * RECENT BROADCASTS WIDGET
+ * ======================== */
+.tb-widget-broadcasts > .mdl-card__supporting-text {
+    overflow: auto;
+    height: 54%;
+}
+
+
+/* ======================== *
+ * UPCOMING WIDGET
+ * ======================== */
+.tb-widget-upcoming > .mdl-card__actions {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.tb-widget-upcoming > .mdl-card__title {
+    align-items: flex-start;
+}
+
+.tb-widget-upcoming > .mdl-card__title > h4 {
+    margin-top: 0;
+}
+
+.tb-widget-upcoming > .mdl-card__actions {
+    display: flex;
+    box-sizing:border-box;
+    align-items: center;
+}
+
+.tb-widget-upcoming > .mdl-card__actions > .material-icons {
+    padding-right: 10px;
+}
+
+.tb-widget-upcoming > .mdl-card__title,
+.tb-widget-upcoming > .mdl-card__actions,
+.tb-widget-upcoming > .mdl-card__actions > .mdl-button {
+    color: #fff;
+}
+
+/* ======================== *
+ * TO-DO WIDGET
+ * ======================== */
+.tb-widget-todo .mdl-list {
+    padding: 0;
+    margin: 0 7px;
+}
+
+.tb-widget-todo .mdl-list .mdl-list__item {
+    padding: 0;
+}
+
+/* ======================== *
+ * NOTES WIDGET
+ * ======================== */
+.tb-widget-notes > .tb-widget-notes-inner {
+    overflow: auto;
+    min-height: 200px;
+    outline: none;
+}

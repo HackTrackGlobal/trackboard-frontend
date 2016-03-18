@@ -20,7 +20,7 @@ $(document).createRoute({
                 if (STAGING_MODE === 'dev') console.log('Logged in Successfully');
 
                 // Go to main page
-                window.location.hash = '#!main'
+                window.location.hash = '#!dashboard'
             }
             else {
 

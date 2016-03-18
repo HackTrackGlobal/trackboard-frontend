@@ -10,26 +10,26 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
         <!-- CSS:libs -->
+        <link rel="stylesheet" href="libs/animate.css/animate.min.css" />
         <link rel="stylesheet" href="libs/material-design-lite/material.min.css" />
 
         <!-- CSS:main -->
-        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/colors.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/widgets.css" />
+        <link rel="stylesheet" href="css/login.css" />
     </head>
     <body>
 
     <!-- Main Wrapper -->
-    <main>
-
-    </main>
-
     <div class="tb-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
 
         <!-- Header -->
-        <header class="tb-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+        <header class="tb-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600 only-for-logged">
             <div class="mdl-layout__header-row">
 
                 <!-- Title -->
-                <span class="mdl-layout-title" id="page-title">Dashboard</span>
+                <span class="mdl-layout-title" id="page-title">Trackboard</span>
                 <div class="mdl-layout-spacer"></div>
             </div>
         </header>
@@ -38,7 +38,7 @@
         <div class="tb-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
 
             <!-- Header (User info) -->
-            <header class="tb-drawer-header">
+            <header class="tb-drawer-header only-for-logged">
 
                 <!-- User image -->
                 <!--<img src="images/user.jpg" class="tb-avatar">-->
@@ -55,16 +55,16 @@
                         <i class="material-icons" role="presentation">arrow_drop_down</i>
                     </button>
                     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="userMenu">
-                        <li class="mdl-menu__item">Settings</li>
-                        <li class="mdl-menu__item">Logout</li>
+                        <a href="#!settings" class="mdl-menu__item">Settings</a>
+                        <a href="#!logout" class="mdl-menu__item">Logout</a>
                     </ul>
                 </div>
             </header>
 
             <!-- Menu Items -->
-            <nav class="tb-navigation mdl-navigation mdl-color--blue-grey-800">
+            <nav class="tb-navigation mdl-navigation mdl-color--blue-grey-800 only-for-logged">
 
-                <a class="mdl-navigation__link highlighted" href="#!group"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">group_work</i>My Group</a>
+                <a class="mdl-navigation__link highlighted" href="#!mygroup"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">group_work</i>My Group</a>
                 <br>
 
                 <a class="mdl-navigation__link" href="#!dashboard"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">dashboard</i>Dashboard</a>
@@ -73,7 +73,7 @@
                 <a class="mdl-navigation__link" href="#!broadcasts"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">announcement</i>Broadcasts</a>
                 <a class="mdl-navigation__link" href="#!chat"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">chat_bubble_outline</i>Public Chat</a>
                 <a class="mdl-navigation__link" href="#!mentors"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">supervisor_account</i>Mentors</a>
-                <a class="mdl-navigation__link" href="#!sponsors"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">track_changes</i>Sponsors and Challenges</a>
+                <a class="mdl-navigation__link" href="#!challenges"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">track_changes</i>Sponsors and Challenges</a>
                 <a class="mdl-navigation__link" href="#!utils"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">build</i>Utils</a>
 
                 <!-- Help button -->
@@ -91,7 +91,7 @@
                     THIS WILL BE REPLACES BY THE CONTENT
                     INSIDE EVERY ROUTE
                 -->
-                <div class="route-data"></div>
+                <div class="route-data" style="width:100%"></div>
             </div>
         </main>
     </div>
@@ -108,7 +108,19 @@
         <!-- JS:routes -->
         <script src="js/routes/home.js"></script>
         <script src="js/routes/login.js"></script>
-        <script src="js/routes/main.js"></script>
         <script src="js/routes/logout.js"></script>
+
+        <!-- JS:pages_routes -->
+        <script src="js/routes/pages/settings.js"></script>
+        <script src="js/routes/pages/mygroup.js"></script>
+        <script src="js/routes/pages/dashboard.js"></script>
+        <script src="js/routes/pages/groups.js"></script>
+        <script src="js/routes/pages/schedule.js"></script>
+        <script src="js/routes/pages/broadcasts.js"></script>
+        <script src="js/routes/pages/chat.js"></script>
+        <script src="js/routes/pages/mentors.js"></script>
+        <script src="js/routes/pages/challenges.js"></script>
+        <script src="js/routes/pages/utils.js"></script>
+        <script src="js/routes/pages/help.js"></script>
     </body>
 </html>

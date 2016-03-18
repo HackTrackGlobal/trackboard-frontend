@@ -28,7 +28,7 @@ Crossed items are deprecated.
 
 ### Important
 - [x] Setting up the framework
-- [ ] Setting up all the routes
+- [x] Setting up all the routes
 - [ ] Design all the pages
 - [ ] Start build'em
 

@@ -1,0 +1,26 @@
+/* ======================== *
+ * LOGIN STYLES
+ * ======================== */
+
+.mdl-layout.login-container {
+    position: fixed;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.mdl-layout.login-container:after {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: black;
+    opacity: 0.4;
+}
+
+.mdl-layout.login-container > .mdl-layout__content {
+    padding: 24px;
+    flex: none;
+}

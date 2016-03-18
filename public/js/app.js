@@ -44,8 +44,9 @@ $(document).initRouter({
         });
 
         // Setting the title
-        var title = window.location.hash.slice(2, window.location.hash.length).split('_').join(" ");
-        $('#page-title').html(title);
+        // var title = window.location.hash.slice(2, window.location.hash.length).split('_').join(" ");
+        // $('#page-title').html(title);
+        setTitle('Trackboard');
 
         // There is a problem with the
         // MDL JS Library, so we initiate
