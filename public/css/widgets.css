@@ -58,3 +58,13 @@
     min-height: 200px;
     outline: none;
 }
+
+/* ======================== *
+ * FLOATING ELEMENT
+ * ======================== */
+.tb-floating {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 99999999999;
+}

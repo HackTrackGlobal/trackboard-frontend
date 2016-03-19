@@ -112,12 +112,3 @@ html, body {
 .tb-layout .tb-content {
     max-width: 1080px;
 }
-
-/* ======================== *
- * FULL WIDTH CARD
- * ======================== */
-.mdl-card.tb-card-fullwidth {
-    margin-top: -20px;
-    min-height: 0;
-    max-height: 95%;
-}

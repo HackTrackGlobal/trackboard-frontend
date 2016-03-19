@@ -1,7 +1,15 @@
 <div class="mdl-grid">
 
+    <!-- Create group button -->
+    <div class="tb-floating">
+        <a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" id="btn-create-group" href="#!mygroup">
+            <i class="material-icons">add</i>
+        </a>
+        <span class="mdl-tooltip" for="btn-create-group">Create a Group</span>
+    </div>
+
     <!-- Group Card -->
-    <div class="mdl-color--white mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet tb-challenge-card">
+    <div class="mdl-color--white mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet tb-group-card">
 
         <!-- Heading -->
         <!-- TODO: Random colors by name -->
@@ -21,22 +29,22 @@
 
         <!-- Show info about the group on top -->
         <div class="mdl-card__menu mdl-color-text--white">
-            <div style="outline:none" id="group-1-locked">
+            <div id="group-1-locked">
                 <i class="material-icons">lock_open</i>
             </div>
             <span class="mdl-tooltip" for="group-1-locked">Group is unlocked</span>
         </div>
 
         <!-- Actions -->
-        <div class="mdl-card__actions mdl-card--border" style="display:flex;align-items:center;">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#!schedule">Ask to Join</a>
+        <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#">Ask to Join</a>
             <div class="mdl-layout-spacer"></div>
-            <span style="padding-right:10px"><b>2</b> Members</span>
+            <span><b>2</b> Members</span>
         </div>
     </div>
 
     <!-- Group Card -->
-    <div class="mdl-color--white mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet tb-challenge-card">
+    <div class="mdl-color--white mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet tb-group-card">
 
         <!-- Heading -->
         <!-- TODO: Random colors by name -->
@@ -56,17 +64,17 @@
 
         <!-- Show info about the group on top -->
         <div class="mdl-card__menu mdl-color-text--white">
-            <div style="outline:none" id="group-2-locked">
+            <div id="group-2-locked">
                 <i class="material-icons">lock_outline</i>
             </div>
             <span class="mdl-tooltip" for="group-2-locked">Group is locked</span>
         </div>
 
         <!-- Actions -->
-        <div class="mdl-card__actions mdl-card--border" style="display:flex;align-items:center;">
+        <div class="mdl-card__actions mdl-card--border">
             <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--disabled" href="#!schedule">Ask to Join</a>
             <div class="mdl-layout-spacer"></div>
-            <span style="padding-right:10px"><b>5</b> Members</span>
+            <span><b>5</b> Members</span>
         </div>
     </div>
 </div>

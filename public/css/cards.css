@@ -1,0 +1,55 @@
+/* ======================== *
+ * FULL WIDTH CARD
+ * ======================== */
+.mdl-card.tb-card-fullwidth {
+    margin-top: -20px;
+    min-height: 0;
+    max-height: 95%;
+}
+
+/* ======================== *
+ * CHALLENGES
+ * ======================== */
+.tb-challenge-card {
+    min-height: 0;
+}
+
+.tb-challenge-card img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+/* ======================== *
+ * GROUP
+ * ======================== */
+.tb-group-card > * {
+    outline: none;
+}
+
+.tb-group-card .mdl-card__actions {
+    display: flex;
+    align-items: center;
+}
+
+.tb-group-card .mdl-card__actions > span {
+    padding-right: 10px;
+}
+
+/* ======================== *
+ * MENTOR
+ * ======================== */
+.tb-mentor-card {
+    min-height: 0;
+}
+
+.tb-mentor-card > * {
+    outline: none;
+}
+
+.tb-mentor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: right;
+    border: none !important;
+}
