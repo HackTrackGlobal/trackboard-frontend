@@ -1,1 +1,65 @@
-<p>chat</p>
+<div class="mdl-grid">
+
+    <!-- Chat -->
+    <div class="mdl-color--white mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col tb-card-fullwidth">
+
+        <!-- Content -->
+        <div class="mdl-card__supporting-text" style="max-height:600px;overflow:auto">
+
+            <!-- Messages -->
+            <ul class="tb-chat-list">
+                <li class="tb-chat-list-item">
+
+                    <!-- The Message -->
+                    <div class="chat-bubble">
+
+                        <!-- Sender -->
+                        <span class="sender">Jhon Doe (Developer)</span>
+
+                        <!-- Time -->
+                        <span class="time">2:15 PM</span>
+
+                        <!-- The Message -->
+                        <span class="message">Hello everyone! who's here?</span>
+                    </div>
+                </li>
+
+                <li class="tb-chat-list-item">
+
+                    <!-- The Message -->
+                    <div class="chat-bubble you">
+
+                        <!-- Sender -->
+                        <span class="sender">Yarden (Damn)</span>
+
+                        <!-- Time -->
+                        <span class="time">2:16 PM</span>
+
+                        <!-- The Message -->
+                        <span class="message">ME!!!!!</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Actions -->
+        <div class="mdl-card__actions mdl-card--border">
+
+            <form class="mdl-grid">
+
+                <!-- Message input -->
+                <div class="mdl-textfield mdl-js-textfield" style="position:absolute;bottom:0;width:85%;">
+                    <input class="mdl-textfield__input" type="text" id="sample1">
+                    <label class="mdl-textfield__label" for="sample1">Message to send..</label>
+                </div>
+
+                <div class="mdl-layout-spacer"></div>
+
+                <!-- Send Button -->
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" type="submit">
+                    <i class="material-icons">send</i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
